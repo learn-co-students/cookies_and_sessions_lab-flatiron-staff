@@ -1,0 +1,11 @@
+
+<div>
+  <form method="POST" action="/">
+    <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+    <label for="product">Product</label>
+    <input type="text" name="product" id="product">
+    <input type="submit" value="add to cart">
+  <form>
+</div>
+
+<%= @cart.join(' ') %>
